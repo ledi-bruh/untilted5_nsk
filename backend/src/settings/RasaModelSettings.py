@@ -3,6 +3,7 @@ import typing as t
 
 
 class RasaModelSettings(BaseModel):
+    base: str
     domain: str
     config: str
     training_files: t.Sequence[str]

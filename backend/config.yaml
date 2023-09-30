@@ -2,6 +2,7 @@ host: localhost
 port: 12222
 
 rasa:
+  base: ../rasa
   domain: ../rasa/domain.yml
   config: ../rasa/config.yml
   training_files:
