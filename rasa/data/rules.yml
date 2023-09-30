@@ -1,4 +1,4 @@
-version: "3.1"
+version: '3.1'
 
 rules:
 
@@ -16,7 +16,7 @@ rules:
   steps:
   - intent: старт
   - action: utter_старт
-
+  
 - rule: вопрос_не_распознан
   steps:
   - intent: nlu_fallback
