@@ -19,5 +19,5 @@ rules:
 
 - rule: вопрос_не_распознан
   steps:
-  - intent: вопрос_не_распознан
+  - intent: nlu_fallback
   - action: utter_вопрос_не_распознан
