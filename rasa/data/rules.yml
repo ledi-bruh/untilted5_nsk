@@ -1,22 +1,17 @@
-version: "3.1"
-
+version: '3.1'
 rules:
-
 - rule: приветствие
   steps:
   - intent: приветствие
   - action: utter_приветствие
-
 - rule: прощание
   steps:
   - intent: прощание
   - action: utter_прощание
-
 - rule: старт
   steps:
   - intent: старт
   - action: utter_старт
-
 - rule: вопрос_не_распознан
   steps:
   - intent: вопрос_не_распознан
