@@ -1,2 +1,14 @@
-# spacy
-# ru-core-news-lg @ https://github.com/explosion/spacy-models/releases/download/ru_core_news_lg-3.5.0/ru_core_news_lg-3.5.0-py3-none-any.whl
+fastapi
+uvicorn
+pydantic
+python-multipart
+transformers
+torch
+sentencepiece
+spacy
+nltk
+questgen @ git+https://github.com/ramsrigouthamg/Questgen.ai
+git+https://github.com/boudinfl/pke.git@69337af9f9e72a25af6d7991eaa9869f1322dd72
+
+scikit-learn
+rasa
