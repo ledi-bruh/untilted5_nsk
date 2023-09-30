@@ -2,22 +2,12 @@ version: "3.1"
 
 rules:
 
-- rule: приветствие
+- rule: Say goodbye anytime the user says goodbye
   steps:
-  - intent: приветствие
-  - action: utter_приветствие
+  - intent: goodbye
+  - action: utter_goodbye
 
-- rule: прощание
+- rule: Say 'I am a bot' anytime the user challenges
   steps:
-  - intent: прощание
-  - action: utter_прощание
-
-- rule: старт
-  steps:
-  - intent: старт
-  - action: utter_старт
-
-- rule: вопрос_не_распознан
-  steps:
-  - intent: вопрос_не_распознан
-  - action: utter_вопрос_не_распознан
+  - intent: bot_challenge
+  - action: utter_iamabot

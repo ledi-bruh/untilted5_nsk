@@ -1,25 +1,33 @@
 version: "3.1"
 
 intents:
-  - приветствие
-  - прощание
-  - старт
-  - вопрос_не_распознан
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
 
 responses:
-  utter_приветствие:
-  - text: "Здравствуйте, чем могу помочь?"
+  utter_greet:
+  - text: "Hey! How are you?"
 
-  utter_прощание:
-  - text: "До свидания, всего доброго, если возникнут вопросы, я всегда тут )"
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
 
-  utter_старт:
-  - text: "Приветствую тебя, человек!!! Меня зовут Смартииша, я буду твоим помощником
-      по вопросом политики нашей компании Smart Consulting. Если у тебя возникли какие-нибудь вопросы, ты можешь задать
-      их мне :)"
-  
-  utter_вопрос_не_распознан:
-  - text: "Прости, я не знаю, как ответить на твой вопрос, пожалуйста перефразируй"
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
 
 session_config:
   session_expiration_time: 60
