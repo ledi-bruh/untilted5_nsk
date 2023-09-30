@@ -1,11 +1,7 @@
 import typing as t
-import nltk
 
 from question_generator.questiongenerator import QuestionGenerator
 from Questgen.main import QGen
-
-
-nltk.download('stopwords')
 
 
 class QuestionGenerateFunc:

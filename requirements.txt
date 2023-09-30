@@ -5,6 +5,7 @@ python-multipart
 transformers
 torch
 sentencepiece
+textblob
 spacy
 nltk
 questgen @ git+https://github.com/ramsrigouthamg/Questgen.ai

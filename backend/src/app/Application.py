@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+import nltk
 # import spacy
 
 from ..settings import Settings, RasaModelSettings
@@ -21,6 +22,11 @@ from ..intent import (
     # DeleteIntentFunc,
     GetIntentsFunc,
 )
+
+
+nltk.download('stopwords')
+nltk.download('brown')
+nltk.download('punkt')
 
 
 __all__ = ['Application']

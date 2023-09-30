@@ -1,5 +1,6 @@
 from fastapi import Response, Depends
 import re
+from textblob import TextBlob
 
 from ..func import MarkdownUploadFunc, UpdateRasaFunc, TranslateEnFunc, TranslateRuFunc, QuestionGenerateFunc
 from .model import MarkdownUploadModel
@@ -32,10 +33,11 @@ class MarkdownUploadView:
         result_en = await self.__qg_func(data_en, 8)
         print('[INFO] QG DONE')
         result_ru = [
-            [
-                re.sub(' ', '_', (await self.__translate_ru_func(a)).strip()),
-                [await self.__translate_ru_func(q) for q in qs],
-            ]
+            {
+                'ans': (ans := (await self.__translate_ru_func(a)).strip()),
+                'name': re.sub(' ', '_', TextBlob(ans).noun_phrases[0])[:55],
+                'qs': [await self.__translate_ru_func(q) for q in qs],
+            }
             for a, qs in result_en
         ]
         print('[INFO] TO RU DONE')
