@@ -184,7 +184,7 @@ pyrightconfig.json
 .history
 .ionide
 
-models
+rasa/models
 .rasa
 
 s2v_old
