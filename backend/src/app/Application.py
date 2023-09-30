@@ -1,15 +1,17 @@
 from fastapi import FastAPI
 import spacy
 
-from .Settings import Settings
+from ..settings import Settings, RasaModelSettings
 from ..common import BasePlugin
 from ..qg import (
     MarkdownUploadView,
+    TrainRasaModelView,
     MarkdownUploadFunc,
     UpdateRasaFunc,
     TranslateEnFunc,
     TranslateRuFunc,
     QuestionGenerateFunc,
+    TrainRasaModelFunc,
 )
 
 
@@ -45,11 +47,23 @@ class Application(BasePlugin):
         )
 
         self.__app.add_api_route(
-            '/md/',
+            '/md',
             endpoint=markdown_upload_view.__call__,
             response_class=markdown_upload_view.__call__.__annotations__['return'],
             methods=['PUT'],
             tags=['md'],
+        )
+
+        train_rasa_model_func = TrainRasaModelFunc(
+            rasa_model_settings=RasaModelSettings(**self.__settings['rasa'])
+        )
+        train_rasa_model_view = TrainRasaModelView(train_rasa_model_func)
+        self.__app.add_api_route(
+            '/train',
+            endpoint=train_rasa_model_view.__call__,
+            response_class=train_rasa_model_view.__call__.__annotations__['return'],
+            methods=['POST'],
+            tags=['train'],
         )
 
     async def deinitialize(self) -> None:
