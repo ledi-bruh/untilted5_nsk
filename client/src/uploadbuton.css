@@ -1,0 +1,28 @@
+.buttons {
+  display: inline-block;
+  margin-left: 20%;
+  margin:0,1em,0,0;
+  }
+.download{
+  border-radius: 4%;
+  position: absolute;
+  width: 40%;
+  height: 50%;
+  background-color: rgb(60, 48, 48);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  left: 50%;
+  top: 50%;
+  padding: 4em;
+  opacity: 90%;
+  transform: translate(-50%, -50%);
+}
+ p{
+  font-size: 2em;
+  color: aliceblue;
+  text-align: center;
+ }
+
+.Learnbutton{
+  display: inline-block;
+  margin-left: 1em;
+}
