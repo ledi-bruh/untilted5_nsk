@@ -316,3 +316,94 @@ rules:
   steps:
   - intent: Фасилитатор
   - action: utter_Фасилитатор
+
+- rule: tg_каналы
+  steps:
+  - intent: tg_каналы
+  - action: utter_tg_каналы
+
+- rule: роль
+  steps:
+  - intent: роль
+  - action: utter_роль
+
+- rule: атрибуты_роли
+  steps:
+  - intent: атрибуты_роли
+  - action: utter_атрибуты_роли
+
+- rule: основная_роль
+  steps:
+  - intent: основная_роль
+  - action: utter_основная_роль
+
+- rule: круг
+  steps:
+  - intent: круг
+  - action: utter_круг
+
+- rule: дочерний_круг
+  steps:
+  - intent: дочерний_круг
+  - action: utter_дочерний_круг
+
+- rule: родительский_круг
+  steps:
+  - intent: родительский_круг
+  - action: utter_родительский_круг
+
+- rule: зона_ответственности_круга
+  steps:
+  - intent: зона_ответственности_круга
+  - action: utter_зона_ответственности_круга
+
+- rule: предназначение_роли
+  steps:
+  - intent: предназначение_роли
+  - action: utter_предназначение_роли
+
+- rule: обязательство_роли
+  steps:
+  - intent: обязательство_роли
+  - action: utter_обязательство_роли
+
+- rule: метрика
+  steps:
+  - intent: метрика
+  - action: utter_метрика
+
+- rule: политика
+  steps:
+  - intent: политика
+  - action: utter_политика
+
+- rule: теншен
+  steps:
+  - intent: теншен
+  - action: utter_теншен
+
+- rule: проект
+  steps:
+  - intent: проект
+  - action: utter_проект
+
+- rule: задача_это
+  steps:
+  - intent: задача_это
+  - action: utter_задача_это
+
+- rule: обязательства_роли
+  steps:
+  - intent: обязательства_роли
+  - action: utter_обязательства_роли
+
+- rule: типовые_обязательства
+  steps:
+  - intent: типовые_обязательства
+  - action: utter_типовые_обязательства
+
+- rule: архивация_роли
+  steps:
+  - intent: архивация_роли
+  - action: utter_архивация_роли
+
