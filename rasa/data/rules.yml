@@ -266,3 +266,53 @@ rules:
   steps:
   - intent: марля
   - action: utter_марля
+
+- rule: ведущий_опятницы
+  steps:
+  - intent: ведущий_опятницы
+  - action: utter_ведущий_опятницы
+
+- rule: культурные_коды
+  steps:
+  - intent: культурные_коды
+  - action: utter_культурные_коды
+
+- rule: днк
+  steps:
+  - intent: днк
+  - action: utter_днк
+
+- rule: корпантропологическое_исследование
+  steps:
+  - intent: корпантропологическое_исследование
+  - action: utter_корпантропологическое_исследование
+
+- rule: бизнес_антропологи
+  steps:
+  - intent: бизнес_антропологи
+  - action: utter_бизнес_антропологи
+
+- rule: эффективность_компании
+  steps:
+  - intent: эффективность_компании
+  - action: utter_эффективность_компании
+
+- rule: количество_кодов_первого_порядка_в_ДНК
+  steps:
+  - intent: количество_кодов_первого_порядка_в_ДНК
+  - action: utter_количество_кодов_первого_порядка_в_ДНК
+
+- rule: культурный_код_компании_Smart_Consulting
+  steps:
+  - intent: культурный_код_компании_Smart_Consulting
+  - action: utter_культурный_код_компании_Smart_Consulting
+
+- rule: ключевые_атрибуты
+  steps:
+  - intent: ключевые_атрибуты
+  - action: utter_ключевые_атрибуты
+
+- rule: Фасилитатор
+  steps:
+  - intent: Фасилитатор
+  - action: utter_Фасилитатор
