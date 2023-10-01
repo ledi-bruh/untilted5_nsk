@@ -1,0 +1,1 @@
+from .GetIntentsView import GetIntentsView

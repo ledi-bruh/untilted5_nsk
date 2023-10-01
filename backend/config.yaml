@@ -1,2 +1,14 @@
 host: localhost
 port: 12222
+
+rasa:
+  base: ../rasa
+  domain: ../rasa/domain.yml
+  config: ../rasa/config.yml
+  training_files:
+    - ../rasa/data/nlu.yml
+    - ../rasa/data/rules.yml
+  output: ../rasa/models
+  dry_run: False
+  force_training: False
+  finetuning_epoch_fraction: 1.0

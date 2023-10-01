@@ -1,1 +1,2 @@
 from .MarkdownUploadView import MarkdownUploadView
+from .TrainRasaModelView import TrainRasaModelView
