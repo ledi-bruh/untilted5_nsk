@@ -16,8 +16,253 @@ rules:
   steps:
   - intent: старт
   - action: utter_старт
-  
+
 - rule: вопрос_не_распознан
   steps:
   - intent: nlu_fallback
   - action: utter_вопрос_не_распознан
+
+- rule: для_корректировки_законодательства_круга
+  steps:
+  - intent: для_корректировки_законодательства_круга
+  - action: utter_для_корректировки_законодательства_круга
+
+- rule: планирование_спринта
+  steps:
+  - intent: планирование_спринта
+  - action: utter_планирование_спринта
+
+- rule: встречa
+  steps:
+  - intent: встречa
+  - action: utter_встречa
+
+- rule: смартократическая_роль
+  steps:
+  - intent: смартократическая_роль
+  - action: utter_смартократическая_роль
+
+- rule: созвон_для_синхрона
+  steps:
+  - intent: созвон_для_синхрона
+  - action: utter_созвон_для_синхрона
+
+- rule: регулярные_проекты
+  steps:
+  - intent: регулярные_проекты
+  - action: utter_регулярные_проекты
+
+- rule: модерирование_встчреч_в_Круге
+  steps:
+  - intent: модерирование_встчреч_в_Круге
+  - action: utter_модерирование_встреч_в_Круге
+
+- rule: agile_методики
+  steps:
+  - intent: agile_методики
+  - action: utter_agile_методики
+
+- rule: региональные_и_федеральные_ведомости
+  steps:
+  - intent: региональные_и_федеральные_ведомости
+  - action: utter_региональные_и_федеральные_ведомости
+
+- rule: бэклог_истории
+  steps:
+  - intent: бэклог_истории
+  - action: utter_бэклог_истории
+
+- rule: план_улучшений_на_следующий_спринт
+  steps:
+  - intent: план_улучшений_на_следующий_спринт
+  - action: utter_план_улучшений_на_следующий_спринт
+  
+- rule: разрывы_между_реальностью_и_ожиданием
+  steps:
+  - intent: разрывы_между_реальностью_и_ожиданием
+  - action: utter_разрывы_между_реальностью_и_ожиданием
+
+- rule: размер_пособия
+  steps:
+  - intent: размер_пособия
+  - action: utter_размер_пособия
+
+- rule: пособие_по_временной_безработице
+  steps:
+  - intent: пособие_по_временной_безработице
+  - action: utter_пособие_по_временной_безработице
+
+- rule: доступ_к_сервиcам
+  steps:
+  - intent: доступ_к_сервиcам
+  - action: utter_доступ_к_сервиcам
+
+- rule: кадровые_документы
+  steps:
+  - intent: кадровые_документы
+  - action: utter_кадровые_документы
+
+- rule: информация_по_профилю
+  steps:
+  - intent: информация_по_профилю
+  - action: utter_информация_по_профилю
+
+- rule: стиль_общения
+  steps:
+  - intent: стиль_общения
+  - action: utter_стиль_общения
+
+- rule: список_полезных_контактов
+  steps:
+  - intent: список_полезных_контактов
+  - action: utter_список_полезных_контактов
+
+- rule: agile_встречи
+  steps:
+  - intent: agile_встречи
+  - action: utter_agile_встречи
+
+- rule: опятница
+  steps:
+  - intent: опятница
+  - action: utter_опятница
+
+- rule: соблюдать_порядок
+  steps:
+  - intent: соблюдать_порядок
+  - action: utter_соблюдать_порядок
+
+- rule: сотрудникам_доступны
+  steps:
+  - intent: сотрудникам_доступны
+  - action: utter_сотрудникам_доступны
+
+- rule: сервис_для_сотрудников
+  steps:
+  - intent: сервис_для_сотрудников
+  - action: utter_сервис_для_сотрудников
+
+- rule: виды_материальной_помощи
+  steps:
+  - intent: виды_материальной_помощи
+  - action: utter_виды_материальной_помощи
+
+- rule: льготы
+  steps:
+  - intent: льготы
+  - action: utter_льготы
+
+- rule: фиксация_усилий
+  steps:
+  - intent: фиксация_усилий
+  - action: utter_фиксация_усилий
+
+- rule: задачи
+  steps:
+  - intent: задачи
+  - action: utter_задачи
+
+- rule: уменьшение_ошибок
+  steps:
+  - intent: уменьшение_ошибок
+  - action: utter_уменьшение_ошибок
+
+- rule: мифы
+  steps:
+  - intent: мифы
+  - action: utter_мифы
+
+- rule: опыт_из_ошибок
+  steps:
+  - intent: опыт_из_ошибок
+  - action: utter_опыт_из_ошибок
+
+- rule: ответственность
+  steps:
+  - intent: ответственность
+  - action: utter_ответственность
+
+- rule: готовы_помочь
+  steps:
+  - intent: готовы_помочь
+  - action: utter_готовы_помочь
+
+- rule: решение_выходит_за_рамки_ответственности
+  steps:
+  - intent: решение_выходит_за_рамки_ответственности
+  - action: utter_решение_выходит_за_рамки_ответственности
+
+- rule: задачи_и_отчитывание
+  steps:
+  - intent: задачи_и_отчитывание
+  - action: utter_задачи_и_отчитывание
+
+- rule: сам_сотрудник
+  steps:
+  - intent: сам_сотрудник
+  - action: utter_сам_сотрудник
+
+- rule: сотрудник_уверен
+  steps:
+  - intent: сотрудник_уверен
+  - action: utter_сотрудник_уверен
+
+- rule: digit
+  steps:
+  - intent: digit
+  - action: utter_digit
+
+- rule: имеет_свободу
+  steps:
+  - intent: имеет_свободу
+  - action: utter_имеет_свободу
+
+- rule: правила_и_ценности
+  steps:
+  - intent: правила_и_ценности
+  - action: utter_правила_и_ценности
+
+- rule: стратегические_сессии
+  steps:
+  - intent: стратегические_сессии
+  - action: utter_стратегические_сессии
+
+- rule: нестандартные_ситуации
+  steps:
+  - intent: нестандартные_ситуации
+  - action: utter_нестандартные_ситуации
+
+- rule: ошибки_опыт
+  steps:
+  - intent: ошибки_опыт
+  - action: utter_ошибки_опыт
+
+- rule: исправление_ошибки
+  steps:
+  - intent: исправление_ошибки
+  - action: utter_исправление_ошибки
+
+- rule: отрицание
+  steps:
+  - intent: отрицание
+  - action: utter_отрицание
+
+- rule: инциденты
+  steps:
+  - intent: инциденты
+  - action: utter_инциденты
+
+- rule: Digit_Культура
+  steps:
+  - intent: Digit_Культура
+  - action: utter_Digit_Культура
+
+- rule: накухне
+  steps:
+  - intent: накухне
+  - action: utter_накухне
+
+- rule: марля
+  steps:
+  - intent: марля
+  - action: utter_марля
