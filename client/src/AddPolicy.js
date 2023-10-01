@@ -11,15 +11,16 @@ const PolicyButton = () => {
       <p>Загрузите новые данные для обучения бота</p>
     <div  class = "buttons">
     <Button
-    variant="contained"
-    component="label"
-  >
-    Загрузить данные 
-    <input
-      type="file"
-      hidden
-    />
-  </Button> <div class = "Learnbutton"><LearnButton /></div>
+  variant="contained"
+  component="label"
+>
+  Upload File
+  <input
+    type="file"
+    hidden
+  />
+  </Button>
+    <div class = "Learnbutton"><LearnButton /></div>
   </div>
   </div>
   );
