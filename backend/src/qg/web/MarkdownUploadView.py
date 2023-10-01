@@ -32,14 +32,19 @@ class MarkdownUploadView:
         print('[INFO] TO EN DONE')
         result_en = await self.__qg_func(data_en, 8)
         print('[INFO] QG DONE')
-        result_ru = [
-            {
-                'ans': (ans := (await self.__translate_ru_func(a)).strip()),
-                'name': re.sub(' ', '_', TextBlob(ans).noun_phrases[0])[:55],
+
+        result_ru = []
+        for a, qs in result_en:
+            ans = (await self.__translate_ru_func(a)).strip()
+            name = ''
+            if (blob := TextBlob(ans).noun_phrases):
+                name = re.sub(' ', '_', blob[0])[:55]
+            result_ru.append({
+                'ans': ans,
+                'name': name,
                 'qs': [await self.__translate_ru_func(q) for q in qs],
-            }
-            for a, qs in result_en
-        ]
+            })
         print('[INFO] TO RU DONE')
+
         await self.__update_rasa_func(result_ru)
         print('[INFO] RASA UPDATED')

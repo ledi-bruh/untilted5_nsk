@@ -22,7 +22,7 @@ class QuestionGenerateFunc:
             qa_list = self.__qg.generate(
                 batch_data,
                 num_questions=n,
-                answer_style='all'
+                answer_style='sentences'
             )
 
             questions = [qa['question'] for qa in qa_list]
@@ -40,7 +40,7 @@ class QuestionGenerateFunc:
             res += [
                 [
                     qa_list[k]['answer'],
-                    [q] + [pq.lstrip('ParaphrasedTarget: ') for pq in pay[k]['Paraphrased Questions']]
+                    [q, *[pq.lstrip('ParaphrasedTarget: ') for pq in pay[k]['Paraphrased Questions']]],
                 ]
                 for k, q in enumerate(questions)
             ]

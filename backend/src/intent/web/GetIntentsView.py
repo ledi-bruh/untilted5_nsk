@@ -1,6 +1,5 @@
 from fastapi.responses import JSONResponse
 from fastapi.encoders import jsonable_encoder
-import typing as t
 
 from ..func import GetIntentsFunc
 from ..func.models import Intent
@@ -14,5 +13,5 @@ class GetIntentsView:
     ) -> None:
         self.__get_intents_func = get_intents_func
 
-    async def __call__(self) -> t.List[Intent]:
+    async def __call__(self) -> JSONResponse:
         return JSONResponse(content=jsonable_encoder(await self.__get_intents_func()))
