@@ -407,3 +407,12 @@ rules:
   - intent: архивация_роли
   - action: utter_архивация_роли
 
+- rule: встречи
+  steps:
+  - intent: встречи
+  - action: utter_встречи
+
+- rule: смартократия
+  steps:
+  - intent: смартократия
+  - action: utter_смартократия
